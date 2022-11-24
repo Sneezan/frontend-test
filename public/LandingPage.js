@@ -3,17 +3,16 @@ const toggled = document.getElementById('toggledBtn');
 
 
 btn.addEventListener('click', function handleClick() {
-    //let initialText = '☽';
     const dark = "☽";
     const light ="☀";
     let mode = (dark >= light) ? "☽" : "☀";
-    
+
     if (btn.textContent.toLowerCase().includes(mode.toLowerCase())) {
         mode = light;
-        toggled.style.color= 'green'
+        toggled.style.color= 'white'
     } else {
        mode = dark;
-      toggled.style.color = 'red'
+      toggled.style.color = 'black'
     }
     toggled.innerHTML = mode;
   });
