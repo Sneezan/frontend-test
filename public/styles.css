@@ -1,44 +1,93 @@
+body, html {
+    margin: 0;
+}
 
 body.dark-mode {
   background-color: black;
   color: white;
 }
-button {
-    background-color:  white;
-    color: black;
-  }
 
 body.light-mode {
   background-color:  white;
   color: black ;
 }
-  button {
-    background-color: black;
-    color:  white;
-  }
+
+/* -----HERO IMG ----- */
+.hero-img img{
+    width: 100vw;
+    height: 600px;
+    object-fit: cover;
+    display: flex;
+    position: relative;
+}
+
+/* ----NAV/ TOPPER---- */
+nav{
+  display: flex;
+  color: orange;
+  position: relative;
+  bottom: 560px;
+  left: 60px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+span{
+  color: black;
+  font-size: 2rem;
+}
+
+.toggle-btn {
+  background-color: transparent;
+  position: relative;
+  border: none;
+  left: 65%;
+
+}
+
+/* ----HERO TEXT----- */
+.hero-text{
+  position: relative;
+  bottom: 460px;
+  left: 10%;
+  max-width: 60%;
+}
+
+h1{
+  font-size: 3.3rem;
+}
+
+p{
+    font-size: 1.7rem;
+}
+.cta-btn{
+    background-color: orange;
+    width: 100px;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+}
 
 
  /*  -----GALLERY-----  */ 
-
-
 
 .gallery-wrap {
     display: grid; 
     grid-template-columns: repeat(5, 1fr); 
     grid-template-rows: repeat(5, 1fr); 
-    grid-column-gap: 3px;
+    grid-column-gap: 2px;
     grid-row-gap: 0; 
     max-width: 800px;
-    margin: 0 auto;
-    
+    margin: 0 auto;  
 }
 
 .gallery-wrap img{
     object-fit: cover;
+    margin: 2px;
 }
 
 .gallery-wrap img:hover{
-    opacity: 40%;
+    opacity: 60%;
 }
 
 .div1 { grid-area: 1 / 1 / 3 / 3; }

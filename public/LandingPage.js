@@ -1,18 +1,25 @@
-const btn = document.getElementById('toggle-btn');
+const btn = document.getElementById('toggle');
+const toggled = document.getElementById('toggledBtn');
 
-function toggleDarkLight() {
-    var body = document.getElementById("body");
-    var currentClass = body.className;
-    body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
-  }
 
-  btn.addEventListener('click', function handleClick() {
-    const initialText = '☽';
-  
-    if (btn.textContent.toLowerCase().includes(initialText.toLowerCase())) {
-      btn.textContent = '☀';
+btn.addEventListener('click', function handleClick() {
+    //let initialText = '☽';
+    const dark = "☽";
+    const light ="☀";
+    let mode = (dark >= light) ? "☽" : "☀";
+    
+    if (btn.textContent.toLowerCase().includes(mode.toLowerCase())) {
+        mode = light;
+        toggled.style.color= 'green'
     } else {
-      btn.textContent = initialText;
+       mode = dark;
+      toggled.style.color = 'red'
     }
+    toggled.innerHTML = mode;
   });
   
+const toggleDarkLight = () => {
+    let body = document.getElementById("body");
+    let currentClass = body.className;
+    body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+  }
