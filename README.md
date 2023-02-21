@@ -1,5 +1,6 @@
 # Frontend-test
-This was a test that given for a recruitment task as a frontend developer for a company using hubspot mainly in November 2022.  
+This was a test that given for a recruitment task as a frontend developer for a company using hubspot mainly in November 2022.
+This site has been modified since handin and made public.   
 
 ## The task
 To create an easy landing page from reference photos. 
