@@ -10,5 +10,9 @@ They included:
 ✓ Image gallery according to specification
 ✓ Light & Dark Mode toggle 
 
-![frontend-test-light](https://user-images.githubusercontent.com/105229808/220368999-abc99ca6-fbea-4298-af8a-7282cad54d62.jpg)
+## view it live
+https://frontendtest-cecilia.netlify.app
+
+![compare](https://user-images.githubusercontent.com/105229808/220374475-35f28ec1-377d-4966-b20b-c8bb0ad37e1e.jpg)
+
 
